@@ -1,4 +1,7 @@
-gunicorn
-uvicorn
 fastapi
+uvicorn
+gunicorn
 joblib
+pandas
+jinja2
+numpy
