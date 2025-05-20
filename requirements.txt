@@ -5,3 +5,4 @@ joblib
 pandas
 jinja2
 numpy
+scikit-learn
