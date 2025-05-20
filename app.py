@@ -1,6 +1,8 @@
 from fastapi import FastAPI, Request, UploadFile, File, HTTPException
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
+import logging
+logging.basicConfig(level=logging.DEBUG)
 import joblib
 import pandas as pd
 import io
@@ -173,5 +175,4 @@ async def predict(request: Request, file: UploadFile = File(...)):
             "request": request,
             "error": f"Произошла непредвиденная ошибка: {e}. Пожалуйста, попробуйте еще раз."
         })
-        import logging
-logging.basicConfig(level=logging.DEBUG)
+       
