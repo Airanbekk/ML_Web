@@ -173,3 +173,5 @@ async def predict(request: Request, file: UploadFile = File(...)):
             "request": request,
             "error": f"Произошла непредвиденная ошибка: {e}. Пожалуйста, попробуйте еще раз."
         })
+        import logging
+logging.basicConfig(level=logging.DEBUG)
